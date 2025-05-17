@@ -19,4 +19,11 @@ public class UserService {
         }
         return null;
     }
+    public static boolean isEmailTaken(String email) {
+        return users.stream().anyMatch(u -> u.getEmail().equals(email));
+    }
+
+    public static void register(User user) {
+        users.add(user);
+    }
 }

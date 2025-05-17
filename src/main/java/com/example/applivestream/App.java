@@ -5,12 +5,19 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
+import java.net.URL;
 
 public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/applivestream/views/login.fxml"));
+        URL fxmlPath = App.class.getResource("/com/example/applivestream/views/login.fxml");
+
+        if (fxmlPath == null) {
+            System.err.println("Không tìm thấy file login.fxml!");
+            return;
+        }
+
+        FXMLLoader fxmlLoader = new FXMLLoader(fxmlPath);
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("LiveStream - Đăng nhập");
         stage.setScene(scene);

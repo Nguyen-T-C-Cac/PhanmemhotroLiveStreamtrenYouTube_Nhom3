@@ -1,7 +1,4 @@
 package com.example.applivestream.util;
-
-package com.example.applivestream.util;
-
 import com.example.applivestream.model.User;
 
 public class SessionManager {
