@@ -2,6 +2,8 @@ package com.example.applivestream.controller;
 
 import com.example.applivestream.model.User;
 import com.example.applivestream.model.UserService;
+import com.example.applivestream.util.EmailValidator;
+import com.example.applivestream.util.PasswordUtils;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -35,6 +37,23 @@ public class RegisterController {
             showAlert("Đăng ký thành công", Alert.AlertType.INFORMATION);
             loadLoginScene();
         }
+        if (!EmailValidator.isValid(email)) {
+            showAlert("Email không hợp lệ.", Alert.AlertType.ERROR);
+            return;
+        }
+
+        if (!PasswordUtils.isStrong(password)) {
+            showAlert("Mật khẩu quá yếu. Tối thiểu 6 ký tự.", Alert.AlertType.ERROR);
+            return;
+        }
+
+        if (UserService.isEmailTaken(email)) {
+            showAlert("Email đã tồn tại.", Alert.AlertType.ERROR);
+        } else {
+            UserService.register(new User(email, password));
+            showAlert("Đăng ký thành công!", Alert.AlertType.INFORMATION);
+            loadLoginScene();
+        }
     }
 
     private void loadLoginScene() {
@@ -52,4 +71,6 @@ public class RegisterController {
         alert.setContentText(msg);
         alert.show();
     }
+
+
 }

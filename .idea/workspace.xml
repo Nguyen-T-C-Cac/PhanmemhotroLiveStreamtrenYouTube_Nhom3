@@ -4,20 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc137955-10a5-4b4e-b2b1-fb1afc95bda6" name="Changes" comment="update : model - user service, sessionManager">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/applivestream/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/applivestream/controller/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/applivestream/views/login.fxml" afterDir="false" />
+    <list default="true" id="cc137955-10a5-4b4e-b2b1-fb1afc95bda6" name="Changes" comment="update : Login fxml">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/applivestream/util/EmailValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/applivestream/util/PasswordUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/applivestream/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/applivestream/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/applivestream/HelloController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/applivestream/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/applivestream/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/applivestream/model/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/applivestream/model/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/applivestream/util/SessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/applivestream/util/SessionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/applivestream/view/login.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/applivestream/view/main" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/applivestream/views/main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/applivestream/view/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/applivestream/views/register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/applivestream/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/applivestream/controller/RegisterController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +111,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747477674554</updated>
-      <workItem from="1747477675684" duration="4379000" />
+      <workItem from="1747477675684" duration="5261000" />
     </task>
     <task id="LOCAL-00001" summary="feat : model user">
       <option name="closed" value="true" />
@@ -135,7 +129,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747480043367</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update : Login fxml">
+      <option name="closed" value="true" />
+      <created>1747482289251</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747482289251</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update : Login fxml">
+      <option name="closed" value="true" />
+      <created>1747482298509</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747482298509</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +154,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat : model user" />
     <MESSAGE value="update : model - user service, sessionManager" />
-    <option name="LAST_COMMIT_MESSAGE" value="update : model - user service, sessionManager" />
+    <MESSAGE value="update : Login fxml" />
+    <option name="LAST_COMMIT_MESSAGE" value="update : Login fxml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

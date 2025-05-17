@@ -29,6 +29,19 @@ public class LoginController {
         } else {
             showAlert("Sai email hoặc mật khẩu", Alert.AlertType.ERROR);
         }
+
+        if (email.isEmpty() || password.isEmpty()) {
+            showAlert("Vui lòng nhập đầy đủ thông tin.", Alert.AlertType.WARNING);
+            return;
+        }
+
+        User user = UserService.authenticate(email, password);
+        if (user != null) {
+            SessionManager.createSession(user);
+            loadMainScene();
+        } else {
+            showAlert("Sai email hoặc mật khẩu", Alert.AlertType.ERROR);
+        }
     }
 
     @FXML
