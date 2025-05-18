@@ -17,18 +17,20 @@ public class RegisterController {
     @FXML private TextField nameField;
     @FXML private TextField emailField;
     @FXML private PasswordField passwordField;
-
+    // 1.1.1.1 Hiển thị biểu mẫu: Nhập tên, email, mật khẩu
     @FXML
     private void onRegister(ActionEvent event) {
         String name = nameField.getText();
         String email = emailField.getText();
         String password = passwordField.getText();
 
+        // 1.1.2 Người dùng nhấn xác nhận
         if (name.isEmpty() || email.isEmpty() || password.isEmpty()) {
             showAlert("Vui lòng điền đầy đủ thông tin!");
             return;
         }
 
+        // 1.1.3.1 Kiểm tra định dạng email, độ mạnh mật khẩu, trùng email
         if (!isValidEmail(email)) {
             showAlert("Email không hợp lệ!");
             return;
@@ -43,9 +45,10 @@ public class RegisterController {
             showAlert("Email đã được sử dụng!");
             return;
         }
-
+        // 1.1.4.1 Tạo tài khoản mới
         User user = new User(name, email, password);
         UserService.register(user);
+        // 1.1.5 Chuyển hướng lại giao diện đăng nhập
         showAlert("Đăng ký thành công! Chuyển đến đăng nhập...");
 
         // Quay lại login.fxml
