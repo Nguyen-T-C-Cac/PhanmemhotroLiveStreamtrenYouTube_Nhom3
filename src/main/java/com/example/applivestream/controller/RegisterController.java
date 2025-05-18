@@ -2,19 +2,18 @@ package com.example.applivestream.controller;
 
 import com.example.applivestream.model.User;
 import com.example.applivestream.model.UserService;
-import com.example.applivestream.util.EmailValidator;
-import com.example.applivestream.util.PasswordUtils;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.*;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
-import javafx.stage.Stage;
+
+import java.util.regex.Pattern;
 
 public class RegisterController {
+
     @FXML private TextField nameField;
     @FXML private TextField emailField;
     @FXML private PasswordField passwordField;
@@ -25,52 +24,58 @@ public class RegisterController {
         String email = emailField.getText();
         String password = passwordField.getText();
 
-        if (!email.contains("@") || password.length() < 6) {
-            showAlert("Email không hợp lệ hoặc mật khẩu quá yếu", Alert.AlertType.ERROR);
+        if (name.isEmpty() || email.isEmpty() || password.isEmpty()) {
+            showAlert("Vui lòng điền đầy đủ thông tin!");
+            return;
+        }
+
+        if (!isValidEmail(email)) {
+            showAlert("Email không hợp lệ!");
+            return;
+        }
+
+        if (password.length() < 6) {
+            showAlert("Mật khẩu phải ít nhất 6 ký tự!");
             return;
         }
 
         if (UserService.isEmailTaken(email)) {
-            showAlert("Email đã được sử dụng", Alert.AlertType.ERROR);
-        } else {
-            UserService.register(new User(email, password));
-            showAlert("Đăng ký thành công", Alert.AlertType.INFORMATION);
-            loadLoginScene();
-        }
-        if (!EmailValidator.isValid(email)) {
-            showAlert("Email không hợp lệ.", Alert.AlertType.ERROR);
+            showAlert("Email đã được sử dụng!");
             return;
         }
 
-        if (!PasswordUtils.isStrong(password)) {
-            showAlert("Mật khẩu quá yếu. Tối thiểu 6 ký tự.", Alert.AlertType.ERROR);
-            return;
-        }
+        User user = new User(name, email, password);
+        UserService.register(user);
+        showAlert("Đăng ký thành công! Chuyển đến đăng nhập...");
 
-        if (UserService.isEmailTaken(email)) {
-            showAlert("Email đã tồn tại.", Alert.AlertType.ERROR);
-        } else {
-            UserService.register(new User(email, password));
-            showAlert("Đăng ký thành công!", Alert.AlertType.INFORMATION);
-            loadLoginScene();
-        }
-    }
-
-    private void loadLoginScene() {
+        // Quay lại login.fxml
         try {
+            Stage stage = (Stage) nameField.getScene().getWindow();
             Parent root = FXMLLoader.load(getClass().getResource("/com/example/applivestream/views/login.fxml"));
-            Stage stage = (Stage) emailField.getScene().getWindow();
             stage.setScene(new Scene(root));
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    private void showAlert(String msg, Alert.AlertType type) {
-        Alert alert = new Alert(type);
-        alert.setContentText(msg);
-        alert.show();
+    private boolean isValidEmail(String email) {
+        return Pattern.matches("^(.+)@(.+)$", email);
     }
 
+    private void showAlert(String message) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION, message, ButtonType.OK);
+        alert.showAndWait();
+    }
+
+    @FXML
+    private void onBackToLogin() {
+        try {
+            Stage stage = (Stage) nameField.getScene().getWindow();
+            Parent root = FXMLLoader.load(getClass().getResource("/com/example/applivestream/views/login.fxml"));
+            stage.setScene(new Scene(root));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
 }

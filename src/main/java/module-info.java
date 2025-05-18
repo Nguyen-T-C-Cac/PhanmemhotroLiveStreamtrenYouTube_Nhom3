@@ -1,6 +1,7 @@
 module com.example.applivestream {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
     opens com.example.applivestream.controller to javafx.fxml;
 
     opens com.example.applivestream to javafx.fxml;

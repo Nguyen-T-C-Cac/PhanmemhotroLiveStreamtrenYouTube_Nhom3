@@ -35,7 +35,6 @@ public class LoginController {
             return;
         }
 
-        User user = UserService.authenticate(email, password);
         if (user != null) {
             SessionManager.createSession(user);
             loadMainScene();
