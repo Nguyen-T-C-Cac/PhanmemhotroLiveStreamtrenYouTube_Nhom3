@@ -65,10 +65,25 @@ public class UserRepository {
             System.err.println("❌ Lỗi kết nối MySQL: " + e.getMessage());
         }
     }
+    public static User findUserByEmail(String email) {
+        String query = "SELECT * FROM users WHERE email = ?";
+        try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
+             PreparedStatement stmt = conn.prepareStatement(query)) {
+            stmt.setString(1, email);
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) {
+                return new User(rs.getString("name"), email, rs.getString("password"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 
     public static void main(String[] args) {
         UserRepository.testConnection();
     }
+
 
 
 }
