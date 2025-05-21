@@ -13,7 +13,7 @@ public class App extends Application {
         URL fxmlPath = App.class.getResource("/com/example/applivestream/views/login.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(fxmlPath);
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("LiveStream");
+        stage.setTitle(" ▶ LiveStream");
         stage.setScene(scene);
         stage.show();
     }

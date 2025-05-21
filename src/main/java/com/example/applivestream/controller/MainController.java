@@ -26,15 +26,21 @@ public class MainController implements Initializable {
     private Timer screenTimer;
     @FXML
     private Label welcomeLabel;
-    private String userName = "Người dùng";
+    private String userName;
 
     public void setUserName(String name) {
         this.userName = name;
+        // Nếu giao diện đã được tải xong, cập nhật ngay
+        if (welcomeLabel != null) {
+            welcomeLabel.setText("Chào mừng, " + userName + "!");
+        }
     }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        welcomeLabel.setText("Chào mừng, " + userName);
+        if (userName != null) {
+            welcomeLabel.setText("Chào mừng, " + userName + "!");
+        }
         startScreenCapture();
     }
     private void startScreenCapture() {
@@ -62,4 +68,5 @@ public class MainController implements Initializable {
                 0, bf.getWidth());
         return wr;
     }
+
 }
