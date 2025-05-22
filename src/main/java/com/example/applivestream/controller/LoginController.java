@@ -12,6 +12,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import static com.example.applivestream.database.UserRepository.logAction;
+
 public class LoginController {
 
     @FXML
@@ -34,7 +36,7 @@ public class LoginController {
         }
         // 1.1.3.2 Hệ thống kiểm tra email và mật khẩu có khớp hay không
         User user = UserService.authenticate(email, password);
-
+        logAction(email, "Đăng nhập");
         if (user != null) {
             // 1.1.4.2 Tạo session (ở đây là lưu tên user tạm thời)
             try {
