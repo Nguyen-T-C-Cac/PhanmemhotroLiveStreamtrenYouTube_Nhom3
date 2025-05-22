@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc137955-10a5-4b4e-b2b1-fb1afc95bda6" name="Changes" comment="update : Hash password Database">
+    <list default="true" id="cc137955-10a5-4b4e-b2b1-fb1afc95bda6" name="Changes" comment="Fix : name app">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/applivestream/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/applivestream/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/applivestream/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/applivestream/controller/MainController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +62,7 @@
     "Maven.AppLiveStream [package].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "duc__branch",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Administrator/Desktop/CloneAnToanBM",
     "list.type.of.created.stylesheet": "CSS",
@@ -83,7 +80,7 @@
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.applivestream.App" />
-      <module name="LIVESTREAM" />
+      <module name="PhanmemhotroLiveStreamtrenYouTube_Nhom3" />
       <option name="VM_PARAMETERS" value="--add-opens=java.desktop/java.awt=ALL-UNNAMED" />
       <extension name="coverage">
         <pattern>
@@ -111,6 +108,19 @@
     <configuration name="AppLiveStream-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/target/AppLiveStream-1.0-SNAPSHOT.jar" />
       <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="PhanmemhotroLiveStreamtrenYouTube_Nhom3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="PhanmemhotroLiveStreamtrenYouTube_Nhom3" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
       <item itemvalue="Application.App" />
