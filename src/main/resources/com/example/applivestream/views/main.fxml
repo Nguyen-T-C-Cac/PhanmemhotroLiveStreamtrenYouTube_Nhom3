@@ -65,39 +65,56 @@
                 <Button text="Start Recording" />
                 <Button text="Start Virtual Camera" />
                 <Button text="Studio Mode" />
-                <Label text="Tiêu đề Video:" layoutX="20" layoutY="20"/>
-                <TextField fx:id="titleField"
-                           promptText="Nhập tiêu đề..."
-                           layoutX="140" layoutY="16"
-                           prefWidth="400"/>
-
-                <Label text="Đường dẫn file:" layoutX="20" layoutY="60"/>
-                <TextField fx:id="filePathField"
-                           promptText="/path/to/video.mp4"
-                           layoutX="140" layoutY="56"
-                           prefWidth="400"/>
-
-                <Button fx:id="endLiveButton"
-                        text="Kết thúc phiên Live"
-                        onAction="#onEndLiveClicked"
-                        layoutX="140" layoutY="100"
-                        prefWidth="160"/>
-
-                <!-- PHẦN NHẬP VIDEO ID ĐỂ XÓA -->
-                <Label text="Video ID cần xóa:" layoutX="20" layoutY="180"/>
-                <TextField fx:id="videoIdField"
-                           promptText="Nhập ID video..."
-                           layoutX="140" layoutY="176"
-                           prefWidth="400"/>
-
-                <Button fx:id="deleteVideoButton"
-                        text="Xóa Video"
-                        onAction="#onDeleteVideoClicked"
-                        layoutX="140" layoutY="220"
-                        prefWidth="160"/>
                 <Button text="Settings" />
                 <Button text="Exit" />
             </VBox>
+            <VBox fx:id="streamingBox"
+                  spacing="10"
+                  AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20">
+                <Label text="Video Storage" style="-fx-text-fill: white;" />
+                <Button text="End Streaming"
+                        onAction="#onEndStreamingClicked"
+                        prefWidth="120"/>
+            </VBox>
+
+            <!-- 2) PANEL SAU KHI ĐÃ END STREAMING (ẩn mặc định) -->
+            <VBox fx:id="postStreamBox"
+                  spacing="10"
+                  AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20"
+                  visible="false" managed="false">
+
+                <!-- 2.1 Save / List Buttons -->
+                <HBox spacing="10">
+                    <Button text="Save Video"
+                            onAction="#onSaveVideoClicked"
+                            prefWidth="100"/>
+                    <Button text="Danh sách Video"
+                            onAction="#onShowListClicked"
+                            prefWidth="100"/>
+                </HBox>
+
+                <!-- 2.2 Title input (ẩn mặc định) -->
+                <HBox fx:id="titleBox" spacing="5"
+                      visible="false" managed="false">
+                    <Label text="Tiêu đề:"/>
+                    <TextField fx:id="titleField"
+                               promptText="Nhập tiêu đề..."
+                               prefWidth="180"/>
+                    <Button text="OK"
+                            onAction="#onConfirmSaveClicked"/>
+                </HBox>
+
+                <!-- 2.3 ListView hiển thị danh sách video -->
+                <ListView fx:id="videoListView"
+                          prefHeight="120"/>
+            </VBox>
+<!--            <VBox spacing="10">-->
+<!--                <Label text="Video Storage" style="-fx-text-fill: white;" />-->
+<!--                <Button text="End Streaming"-->
+<!--                        onAction="#onEndStreamingClicked"-->
+<!--                        maxWidth="Infinity"/>-->
+<!--            </VBox>-->
+
         </HBox>
     </bottom>
 </BorderPane>
