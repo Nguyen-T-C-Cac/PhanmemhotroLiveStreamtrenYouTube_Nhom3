@@ -65,6 +65,36 @@
                 <Button text="Start Recording" />
                 <Button text="Start Virtual Camera" />
                 <Button text="Studio Mode" />
+                <Label text="Tiêu đề Video:" layoutX="20" layoutY="20"/>
+                <TextField fx:id="titleField"
+                           promptText="Nhập tiêu đề..."
+                           layoutX="140" layoutY="16"
+                           prefWidth="400"/>
+
+                <Label text="Đường dẫn file:" layoutX="20" layoutY="60"/>
+                <TextField fx:id="filePathField"
+                           promptText="/path/to/video.mp4"
+                           layoutX="140" layoutY="56"
+                           prefWidth="400"/>
+
+                <Button fx:id="endLiveButton"
+                        text="Kết thúc phiên Live"
+                        onAction="#onEndLiveClicked"
+                        layoutX="140" layoutY="100"
+                        prefWidth="160"/>
+
+                <!-- PHẦN NHẬP VIDEO ID ĐỂ XÓA -->
+                <Label text="Video ID cần xóa:" layoutX="20" layoutY="180"/>
+                <TextField fx:id="videoIdField"
+                           promptText="Nhập ID video..."
+                           layoutX="140" layoutY="176"
+                           prefWidth="400"/>
+
+                <Button fx:id="deleteVideoButton"
+                        text="Xóa Video"
+                        onAction="#onDeleteVideoClicked"
+                        layoutX="140" layoutY="220"
+                        prefWidth="160"/>
                 <Button text="Settings" />
                 <Button text="Exit" />
             </VBox>
