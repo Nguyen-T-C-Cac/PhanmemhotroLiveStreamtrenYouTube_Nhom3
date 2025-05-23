@@ -4,6 +4,7 @@ module com.example.applivestream {
     requires java.sql;
     requires jbcrypt;
     requires java.desktop;
+    requires org.json;
     opens com.example.applivestream.controller to javafx.fxml;
 
     opens com.example.applivestream to javafx.fxml;

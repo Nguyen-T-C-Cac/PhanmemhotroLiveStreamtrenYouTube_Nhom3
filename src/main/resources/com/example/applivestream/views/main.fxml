@@ -61,12 +61,12 @@
             <!-- CONTROLS -->
             <VBox spacing="10">
                 <Label text="Controls" style="-fx-text-fill: white;" />
-                <Button text="Start Streaming" />
+                <Button text="Start Streaming" onAction="#handleStartStreaming"/>
                 <Button text="Start Recording" />
                 <Button text="Start Virtual Camera" />
                 <Button text="Studio Mode" />
-                <Button text="Settings" />
-                <Button text="Exit" />
+                <Button text="Settings" onAction="#handleSettings"/>
+                <Button text="Exit"  />
             </VBox>
         </HBox>
     </bottom>
