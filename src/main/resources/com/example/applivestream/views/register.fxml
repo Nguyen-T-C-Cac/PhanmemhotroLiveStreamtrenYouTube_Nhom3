@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.applivestream.controller.RegisterController">
+    <children>
+        <VBox alignment="CENTER" spacing="15" AnchorPane.topAnchor="50" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50">
+            <Label text="Đăng ký">
+                <font><Font size="20" /></font>
+            </Label>
+            <TextField fx:id="nameField" promptText="Tên người dùng" maxWidth="250" />
+            <TextField fx:id="emailField" promptText="Email" maxWidth="250" />
+            <PasswordField fx:id="passwordField" promptText="Mật khẩu" maxWidth="250" />
+            <Button text="Xác nhận" onAction="#onRegister" maxWidth="150" />
+            <Hyperlink text="Quay lại đăng nhập" onAction="#onBackToLogin" />
+        </VBox>
+    </children>
+</AnchorPane>

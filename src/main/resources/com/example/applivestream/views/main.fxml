@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.applivestream.controller.MainController"
+            prefWidth="1200" prefHeight="700" style="-fx-background-color: #1e1e1e;">
+
+    <!-- CENTER: Preview -->
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <Label fx:id="welcomeLabel" style="-fx-text-fill: white; -fx-font-size: 20;" />
+            <ImageView fx:id="previewImage" fitWidth="800" fitHeight="450" preserveRatio="true" />
+
+        </VBox>
+    </center>
+
+    <!-- BOTTOM: All lower sections (Scenes, Sources, Mixer, Transitions, Controls) -->
+    <bottom>
+        <HBox spacing="10" style="-fx-padding: 10; -fx-background-color: #2b2b2b;">
+            <!-- SCENES -->
+            <VBox spacing="5">
+                <Label text="Scenes" style="-fx-text-fill: white;" />
+                <ListView fx:id="sceneList" prefWidth="150" prefHeight="150" />
+                <HBox spacing="5">
+                    <Button text="+" />
+                    <Button text="−" />
+                </HBox>
+            </VBox>
+
+            <!-- SOURCES -->
+            <VBox spacing="5">
+                <Label text="Sources" style="-fx-text-fill: white;" />
+                <ListView fx:id="sourceList" prefWidth="200" prefHeight="150" />
+                <HBox spacing="5">
+                    <Button text="+" />
+                    <Button text="−" />
+                </HBox>
+            </VBox>
+
+            <!-- AUDIO MIXER -->
+            <VBox spacing="5">
+                <Label text="Audio Mixer" style="-fx-text-fill: white;" />
+                <VBox spacing="5">
+                    <Label text="Desktop Audio" style="-fx-text-fill: white;" />
+                    <ProgressBar progress="0.4" prefWidth="200" />
+                    <Label text="Mic/Aux" style="-fx-text-fill: white;" />
+                    <ProgressBar progress="0.6" prefWidth="200" />
+                </VBox>
+            </VBox>
+
+            <!-- SCENE TRANSITIONS -->
+            <VBox spacing="5">
+                <Label text="Scene Transitions" style="-fx-text-fill: white;" />
+                <ComboBox prefWidth="150" promptText="Fade" />
+                <Label text="Duration" style="-fx-text-fill: white;" />
+                <TextField promptText="300 ms" prefWidth="150" />
+            </VBox>
+
+            <!-- CONTROLS -->
+            <VBox spacing="10">
+                <Label text="Controls" style="-fx-text-fill: white;" />
+                <Button text="Start Streaming" />
+                <Button text="Start Recording" />
+                <Button text="Start Virtual Camera" />
+                <Button text="Studio Mode" />
+                <Button text="Settings" />
+                <Button text="Exit" />
+            </VBox>
+        </HBox>
+    </bottom>
+</BorderPane>
