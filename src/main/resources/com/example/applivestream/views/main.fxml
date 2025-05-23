@@ -72,49 +72,14 @@
                   spacing="10"
                   AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20">
                 <Label text="Video Storage" style="-fx-text-fill: white;" />
+<!--                2.1.0.0	User nhấn nút “Kết thúc phiên live”.-->
                 <Button text="End Streaming"
                         onAction="#onEndStreamingClicked"
                         prefWidth="120"/>
+                <Label fx:id="timerLabel"
+                       text="0s"
+                       style="-fx-text-fill: white; -fx-font-size: 16px;"/>
             </VBox>
-
-            <!-- 2) PANEL SAU KHI ĐÃ END STREAMING (ẩn mặc định) -->
-            <VBox fx:id="postStreamBox"
-                  spacing="10"
-                  AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20"
-                  visible="false" managed="false">
-
-                <!-- 2.1 Save / List Buttons -->
-                <HBox spacing="10">
-                    <Button text="Save Video"
-                            onAction="#onSaveVideoClicked"
-                            prefWidth="100"/>
-                    <Button text="Danh sách Video"
-                            onAction="#onShowListClicked"
-                            prefWidth="100"/>
-                </HBox>
-
-                <!-- 2.2 Title input (ẩn mặc định) -->
-                <HBox fx:id="titleBox" spacing="5"
-                      visible="false" managed="false">
-                    <Label text="Tiêu đề:"/>
-                    <TextField fx:id="titleField"
-                               promptText="Nhập tiêu đề..."
-                               prefWidth="180"/>
-                    <Button text="OK"
-                            onAction="#onConfirmSaveClicked"/>
-                </HBox>
-
-                <!-- 2.3 ListView hiển thị danh sách video -->
-                <ListView fx:id="videoListView"
-                          prefHeight="120"/>
-            </VBox>
-<!--            <VBox spacing="10">-->
-<!--                <Label text="Video Storage" style="-fx-text-fill: white;" />-->
-<!--                <Button text="End Streaming"-->
-<!--                        onAction="#onEndStreamingClicked"-->
-<!--                        maxWidth="Infinity"/>-->
-<!--            </VBox>-->
-
         </HBox>
     </bottom>
 </BorderPane>
