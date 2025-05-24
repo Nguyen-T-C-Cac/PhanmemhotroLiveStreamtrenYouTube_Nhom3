@@ -2,12 +2,17 @@ package com.example.applivestream.database;
 
 import com.example.applivestream.model.User;
 
+import java.net.InetAddress;
 import java.sql.*;
 
 public class UserRepository {
-    private static final String URL = "jdbc:mysql://localhost:3306/applivestream";
-    private static final String USER = "root";
-    private static final String PASSWORD = ""; // Cập nhật nếu cần
+//    private static final String URL = "jdbc:mysql://localhost:3306/applivestream";
+//    private static final String USER = "root";
+//    private static final String PASSWORD = "";
+
+    private static final String URL = "jdbc:mysql://sql8.freesqldatabase.com:3306/sql8780238";
+    private static final String USER = "sql8780238";
+    private static final String PASSWORD = "Pf7bLADBVu";
 
     static {
         try {
@@ -45,9 +50,9 @@ public class UserRepository {
 
     public static void testConnection() {
         try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD)) {
-            System.out.println("✅ Kết nối MySQL thành công");
+            System.out.println("Kết nối MySQL thành công");
         } catch (SQLException e) {
-            System.err.println("❌ Lỗi kết nối MySQL: " + e.getMessage());
+            System.err.println("Lỗi kết nối MySQL: " + e.getMessage());
         }
     }
     public static User findUserByEmail(String email) {
@@ -64,8 +69,23 @@ public class UserRepository {
         }
         return null;
     }
+    public static void logAction(String email, String action) {
+        String query = "INSERT INTO logs (user_email, action, ip_address) VALUES (?, ?, ?)";
+        try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
+             PreparedStatement stmt = conn.prepareStatement(query)) {
+            String ip = InetAddress.getLocalHost().getHostAddress(); // lấy IP local
+            stmt.setString(1, email);
+            stmt.setString(2, action);
+            stmt.setString(3, ip);
+            stmt.executeUpdate();
+        } catch (Exception e) {
+            System.err.println("Log insert failed: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
 
-    public static void main(String[] args) {
+
+public static void main(String[] args) {
         UserRepository.testConnection();
     }
 

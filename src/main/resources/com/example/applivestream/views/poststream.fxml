@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.applivestream.controller.PostStreamController"
+            prefWidth="400" prefHeight="300">
+
+    <VBox spacing="10"
+          AnchorPane.topAnchor="20"
+          AnchorPane.leftAnchor="20"
+          AnchorPane.rightAnchor="20">
+
+        <HBox spacing="10">
+            <Button text="Save Video"
+                    onAction="#onSaveVideoClicked"
+                    prefWidth="150"/>
+            <Button text="Danh sách Video"
+                    onAction="#onShowListClicked"
+                    prefWidth="150"/>
+            <Label fx:id="durationLabel" text=""/>
+        </HBox>
+
+        <HBox fx:id="titleBox"
+              spacing="5"
+              visible="false" managed="false">
+            <Label text="Tiêu đề:"/>
+            <TextField fx:id="titleField"
+                       promptText="Nhập tiêu đề..."
+                       prefWidth="200"/>
+            <Button text="OK"
+                    onAction="#onConfirmSaveClicked"/>
+        </HBox>
+
+        <!-- Không đổi: ListView hiển thị list, sẽ được custom cell factory -->
+        <ListView fx:id="videoListView"
+                  prefHeight="150"
+                  visible="false" managed="false"/>
+
+    </VBox>
+</AnchorPane>

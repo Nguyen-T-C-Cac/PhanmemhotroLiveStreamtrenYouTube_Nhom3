@@ -12,6 +12,8 @@ import javafx.scene.Parent;
 
 import java.util.regex.Pattern;
 
+import static com.example.applivestream.database.UserRepository.logAction;
+
 public class RegisterController {
 
     @FXML private TextField nameField;
@@ -50,7 +52,7 @@ public class RegisterController {
         UserService.register(user);
         // 1.1.5 Chuyển hướng lại giao diện đăng nhập
         showAlert("Đăng ký thành công! Chuyển đến đăng nhập...");
-
+        logAction(email, "Đăng ký");
         // Quay lại login.fxml
         try {
             Stage stage = (Stage) nameField.getScene().getWindow();
