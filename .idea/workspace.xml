@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc137955-10a5-4b4e-b2b1-fb1afc95bda6" name="Changes" comment="update : Hash password Database">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/applivestream/controller/LivestreamSetupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/applivestream/views/liveStreamSetupForm.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/applivestream/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/applivestream/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/applivestream/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/applivestream/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/applivestream/views/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/applivestream/views/main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +49,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -56,15 +65,19 @@
   "keyToString": {
     "Application.App.executor": "Run",
     "Application.HelloApplication.executor": "Run",
+    "Application.LivestreamSetupForm.executor": "Run",
     "Application.UserRepository.executor": "Run",
     "JAR Application.AppLiveStream-1.0-SNAPSHOT.jar.executor": "Run",
     "Maven.AppLiveStream [clean].executor": "Run",
+    "Maven.AppLiveStream [install].executor": "Run",
+    "Maven.AppLiveStream [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
     "Maven.AppLiveStream [package].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "hoang",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Administrator/Desktop/CloneAnToanBM",
+    "last_opened_file_path": "D:/CNPM/PhanmemhotroLiveStreamtrenYouTube_Nhom3/src/main/java/com/example/applivestream/hoang",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -77,6 +90,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CNPM\PhanmemhotroLiveStreamtrenYouTube_Nhom3\src\main\java\com\example\applivestream\hoang" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CNPM\PhanmemhotroLiveStreamtrenYouTube_Nhom3\src\main\java\hcmuaf\edu\vn\fit\Model" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk-17" />
@@ -87,6 +108,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.applivestream.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LivestreamSetupForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.applivestream.hoang.LivestreamSetupForm" />
+      <module name="LIVESTREAM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.applivestream.hoang.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,6 +146,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.LivestreamSetupForm" />
       <item itemvalue="Application.App" />
       <item itemvalue="Application.UserRepository" />
       <item itemvalue="JAR Application.AppLiveStream-1.0-SNAPSHOT.jar" />
@@ -119,6 +154,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.LivestreamSetupForm" />
         <item itemvalue="Application.UserRepository" />
         <item itemvalue="JAR Application.AppLiveStream-1.0-SNAPSHOT.jar" />
       </list>
@@ -127,8 +163,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
       </set>
     </attachedChunks>
   </component>
@@ -144,6 +180,7 @@
       <workItem from="1747549293227" duration="5150000" />
       <workItem from="1747554848111" duration="207000" />
       <workItem from="1747867511581" duration="5063000" />
+      <workItem from="1748056838191" duration="8625000" />
     </task>
     <task id="LOCAL-00001" summary="feat : model user">
       <option name="closed" value="true" />

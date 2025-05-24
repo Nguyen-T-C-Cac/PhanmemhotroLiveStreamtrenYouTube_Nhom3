@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Nhập các thư viện JavaFX để sử dụng thành phần giao diện -->
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.collections.FXCollections?>
+
+<!-- Giao diện chính của form thiết lập livestream -->
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.applivestream.controller.LivestreamSetupController"
+      spacing="8" alignment="CENTER" prefWidth="600" prefHeight="500"
+      style="-fx-background-color: #2b2b2b; -fx-padding: 15;">
+
+    <!-- Hiển thị tiêu đề chính của form -->
+    <Label fx:id="titleLabel" text="Thiết lập phiên livestream"
+           style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #ffffff; -fx-padding: 5 0;" />
+
+    <!-- Nhóm nhãn và ô nhập tiêu đề livestream trên cùng một hàng -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <!-- Hiển thị nhãn cho phần nhập tiêu đề -->
+        <Label text="Tiêu đề" prefWidth="120"
+               style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #d3d3d3; -fx-padding: 0 0 0 0;" />
+        <!-- Ô nhập tiêu đề của livestream -->
+        <TextField fx:id="titleField" promptText="Nhập tiêu đề livestream" prefWidth="400"
+                   style="-fx-background-color: #444444; -fx-text-fill: #ffffff; -fx-prompt-text-fill: #888888; -fx-font-size: 14px; -fx-padding: 8; -fx-border-color: #555555; -fx-border-width: 1; -fx-border-radius: 3; -fx-background-radius: 3;" />
+    </HBox>
+
+    <!-- Nhóm nhãn và ô nhập mô tả livestream trên cùng một hàng -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <!-- Hiển thị nhãn cho phần nhập mô tả -->
+        <Label text="Mô tả" prefWidth="120"
+               style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #d3d3d3; -fx-padding: 0 0 0 0;" />
+        <!-- Ô nhập mô tả chi tiết của livestream -->
+        <TextArea fx:id="descriptionField" promptText="Nhập mô tả livestream" prefWidth="400" prefHeight="70"
+                  style="-fx-background-color: #444444; -fx-text-fill: #ffffff; -fx-prompt-text-fill: #888888; -fx-font-size: 14px; -fx-border-color: #555555; -fx-border-width: 1; -fx-border-radius: 3; -fx-background-radius: 3;" />
+    </HBox>
+
+    <!-- Nhóm nhãn và phần chọn ảnh đại diện trên cùng một hàng -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <!-- Hiển thị nhãn cho phần chọn ảnh đại diện -->
+        <Label text="Thumbnail" prefWidth="120"
+               style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #d3d3d3; -fx-padding: 0 0 0 0;" />
+        <!-- Chứa nút chọn ảnh và nhãn hiển thị đường dẫn ảnh -->
+        <HBox spacing="10"
+              style="-fx-background-color: #353535; -fx-padding: 8; -fx-border-color: #444444; -fx-border-width: 1; -fx-border-radius: 5; -fx-background-radius: 5;">
+            <!-- Nút mở cửa sổ chọn file ảnh đại diện -->
+            <Button fx:id="thumbnailButton" text="Chọn ảnh..."
+                    style="-fx-background-color: #555555; -fx-text-fill: #ffffff; -fx-font-size: 14px; -fx-padding: 8 16; -fx-border-radius: 3; -fx-background-radius: 3;" />
+            <!-- Hiển thị tên file ảnh đã chọn -->
+            <Label fx:id="thumbnailPath" text="Chưa chọn file"
+                   style="-fx-text-fill: #d3d3d3; -fx-font-size: 14px; -fx-padding: 8 0;" />
+        </HBox>
+    </HBox>
+
+    <!-- Nhóm nhãn và bộ chọn thời gian phát sóng trên cùng một hàng -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <!-- Hiển thị nhãn cho phần chọn thời gian phát sóng -->
+        <Label text="Thời gian phát sóng" prefWidth="120"
+               style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #d3d3d3; -fx-padding: 0 0 0 0;" />
+        <!-- Bộ chọn ngày để lên lịch livestream -->
+        <DatePicker fx:id="datePicker" prefWidth="400"
+                    style="-fx-background-color: #444444; -fx-text-fill: #ffffff; -fx-prompt-text-fill: #888888; -fx-font-size: 14px;" />
+    </HBox>
+
+    <!-- Nhóm nhãn và hộp chọn nền tảng phát sóng trên cùng một hàng -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <!-- Hiển thị nhãn cho phần chọn nền tảng phát sóng -->
+        <Label text="Nền tảng phát sóng" prefWidth="120"
+               style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #d3d3d3; -fx-padding: 0 0 0 0;" />
+        <!-- Hộp chọn nền tảng phát sóng (YouTube, Facebook, Twitch) -->
+        <ComboBox fx:id="platformComboBox" promptText="Chọn nền tảng" prefWidth="400"
+                  style="-fx-background-color: #444444; -fx-text-fill: #ffffff; -fx-prompt-text-fill: #888888; -fx-font-size: 14px;">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="YouTube" />
+                    <String fx:value="Facebook" />
+                    <String fx:value="Twitch" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+    </HBox>
+
+    <!-- Nhóm nhãn và ô nhập stream key trên cùng một hàng -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <!-- Hiển thị nhãn cho phần nhập stream key -->
+        <Label text="Streamkey" prefWidth="120"
+               style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #d3d3d3; -fx-padding: 0 0 0 0;" />
+        <!-- Ô nhập stream key để kết nối với nền tảng phát sóng -->
+        <TextField fx:id="streamkeyField" promptText="Nhập streamkey" prefWidth="400"
+                   style="-fx-background-color: #444444; -fx-text-fill: #ffffff; -fx-prompt-text-fill: #888888; -fx-font-size: 14px; -fx-padding: 8; -fx-border-color: #555555; -fx-border-width: 1; -fx-border-radius: 3; -fx-background-radius: 3;" />
+    </HBox>
+
+    <!-- Nhóm nhãn và phần chọn hình thức phát sóng trên cùng một hàng -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <!-- Hiển thị nhãn cho phần chọn hình thức phát sóng -->
+        <Label text="Hình thức phát sóng" prefWidth="120"
+               style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #d3d3d3; -fx-padding: 0 0 0 0;" />
+        <!-- Chứa các nút radio để chọn hình thức phát sóng -->
+        <HBox spacing="20"
+              style="-fx-background-color: #353535; -fx-padding: 8; -fx-border-color: #444444; -fx-border-width: 1; -fx-border-radius: 5; -fx-background-radius: 5;">
+            <!-- Nút radio để chọn phát trực tiếp, mặc định được chọn -->
+            <RadioButton fx:id="liveRadio" text="Phát trực tiếp" selected="true"
+                         style="-fx-text-fill: #d3d3d3; -fx-font-size: 14px;">
+                <toggleGroup>
+                    <ToggleGroup fx:id="streamTypeGroup" />
+                </toggleGroup>
+            </RadioButton>
+            <!-- Nút radio để chọn công chiếu (phát video đã ghi sẵn) -->
+            <RadioButton fx:id="preRecordedRadio" text="Công chiếu"
+                         style="-fx-text-fill: #d3d3d3; -fx-font-size: 14px;">
+                <toggleGroup>
+                    <fx:reference source="streamTypeGroup" />
+                </toggleGroup>
+            </RadioButton>
+        </HBox>
+    </HBox>
+
+    <!-- Nhóm nhãn và phần tải lên video trên cùng một hàng -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <!-- Hiển thị nhãn cho phần tải lên video -->
+        <Label text="Tải lên video" prefWidth="120"
+               style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #d3d3d3; -fx-padding: 0 0 0 0;" />
+        <!-- Chứa nút chọn video và nhãn hiển thị đường dẫn, ẩn nếu chọn phát trực tiếp -->
+        <HBox fx:id="videoBox" spacing="10" visible="false" managed="false"
+              style="-fx-background-color: #353535; -fx-padding: 8; -fx-border-color: #444444; -fx-border-width: 1; -fx-border-radius: 5; -fx-background-radius: 5;">
+            <!-- Nút mở cửa sổ chọn file video -->
+            <Button fx:id="videoButton" text="Chọn video..."
+                    style="-fx-background-color: #555555; -fx-text-fill: #ffffff; -fx-font-size: 14px; -fx-padding: 8 16; -fx-border-radius: 3; -fx-background-radius: 3;" />
+            <!-- Hiển thị tên file video đã chọn -->
+            <Label fx:id="videoPath" text="Chưa chọn file"
+                   style="-fx-text-fill: #d3d3d3; -fx-font-size: 14px; -fx-padding: 8 0;" />
+        </HBox>
+    </HBox>
+
+    <!-- Nút lưu toàn bộ thông tin thiết lập livestream -->
+    <Button fx:id="saveButton" text="Lưu" prefWidth="400"
+            style="-fx-background-color: #1e90ff; -fx-text-fill: #ffffff; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 5; -fx-background-radius: 5;"
+            onMouseEntered="#onSaveButtonMouseEntered" onMouseExited="#onSaveButtonMouseExited" />
+</VBox>

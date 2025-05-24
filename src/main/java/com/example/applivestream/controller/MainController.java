@@ -1,12 +1,12 @@
 package com.example.applivestream.controller;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
-
-import java.net.URL;
-import java.util.ResourceBundle;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.WritableImage;
@@ -14,23 +14,25 @@ import javafx.scene.image.PixelWriter;
 import javafx.scene.image.PixelFormat;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 import java.util.Timer;
 import java.util.TimerTask;
+import javafx.stage.Stage;
 
 public class MainController implements Initializable {
     @FXML private ListView<String> sceneList;
     @FXML private ListView<String> sourceList;
-    @FXML
-    private ImageView previewImage;
+    @FXML private ImageView previewImage;
+    @FXML private Label welcomeLabel;
+    @FXML private Button startStreamingButton;
 
     private Timer screenTimer;
-    @FXML
-    private Label welcomeLabel;
     private String userName;
 
     public void setUserName(String name) {
         this.userName = name;
-        // Nếu giao diện đã được tải xong, cập nhật ngay
         if (welcomeLabel != null) {
             welcomeLabel.setText("Chào mừng, " + userName + "!");
         }
@@ -42,7 +44,11 @@ public class MainController implements Initializable {
             welcomeLabel.setText("Chào mừng, " + userName + "!");
         }
         startScreenCapture();
+        if (startStreamingButton != null) {
+            startStreamingButton.setOnAction(e -> openLivestreamSetupForm());
+        }
     }
+
     private void startScreenCapture() {
         screenTimer = new Timer();
         screenTimer.scheduleAtFixedRate(new TimerTask() {
@@ -57,7 +63,7 @@ public class MainController implements Initializable {
                     e.printStackTrace();
                 }
             }
-        }, 0, 100); // update every 100ms
+        }, 0, 100);
     }
 
     private Image convertToFxImage(BufferedImage bf) {
@@ -69,4 +75,17 @@ public class MainController implements Initializable {
         return wr;
     }
 
+    @FXML
+    private void openLivestreamSetupForm() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/applivestream/views/livestreamSetupForm.fxml"));
+            Scene scene = new Scene(loader.load(), 600, 800);
+            Stage stage = new Stage();
+            stage.setTitle("Thiết lập phiên livestream");
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
 }
