@@ -23,6 +23,7 @@
             <Button text="Danh sách Video"
                     onAction="#onShowListClicked"
                     prefWidth="150"/>
+            <Label fx:id="durationLabel" text=""/>
         </HBox>
 
         <HBox fx:id="titleBox"

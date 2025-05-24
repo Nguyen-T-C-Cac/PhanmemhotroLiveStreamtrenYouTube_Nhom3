@@ -16,6 +16,14 @@ public class PostStreamController implements Initializable {
     @FXML private TextField titleField;
     @FXML private ListView<String> videoListView;
 
+    @FXML private Label durationLabel;
+    public void setDuration(int seconds) {
+        durationLabel.setText("Recorded Time: " + seconds + "s");
+    }
+
+    @FXML
+    public void initialize() {
+    }
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         // Ẩn input và list lúc khởi tạo
@@ -29,6 +37,7 @@ public class PostStreamController implements Initializable {
             private final HBox cellBox = new HBox(10);
             private final Label lbl = new Label();
             private final Button delBtn = new Button("Xóa");
+            private final Button vieBtn = new Button("Xem");
 
             {
                 // Cho nút Xóa remove chính item này khi click
@@ -38,7 +47,7 @@ public class PostStreamController implements Initializable {
                 });
                 // cho label & button phóng to trong HBox
                 HBox.setHgrow(lbl, Priority.ALWAYS);
-                cellBox.getChildren().addAll(lbl, delBtn);
+                cellBox.getChildren().addAll(lbl, delBtn,vieBtn);
             }
 
             @Override

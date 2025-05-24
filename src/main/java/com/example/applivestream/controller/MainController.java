@@ -65,9 +65,19 @@ public class MainController implements Initializable {
         if (userName != null) {
             welcomeLabel.setText("Chào mừng, " + userName + "!");
         }
+        timeline = new Timeline(new KeyFrame(Duration.seconds(1), e -> {
+            seconds++;
+            timerLabel.setText(seconds + "s");
+        }));
+        timeline.setCycleCount(Timeline.INDEFINITE);
         startScreenCapture();
     }
-
+    @FXML
+    private void handleStartRecording() {
+        seconds = 0;
+        timerLabel.setText("0s");
+        timeline.playFromStart();
+    }
     private void startScreenCapture() {
         screenTimer = new Timer();
         screenTimer.scheduleAtFixedRate(new TimerTask() {
@@ -96,7 +106,7 @@ public class MainController implements Initializable {
 
     @FXML
     private void onEndStreamingClicked(ActionEvent event) {
-        if (timeline != null) timeline.stop();
+        timeline.stop();
 
         try {
             // Load fxml của popup
@@ -118,19 +128,8 @@ public class MainController implements Initializable {
             showError("Không thể mở cửa sổ thao tác sau khi kết thúc stream.");
         }
     }
-    public void initialize() {
-        timeline = new Timeline(new KeyFrame(Duration.seconds(1), e -> {
-            seconds++;
-            timerLabel.setText(seconds + "s");
-        }));
-        timeline.setCycleCount(Animation.INDEFINITE);
-    }
-    @FXML
-    private void handleStartRecording() {
-        seconds = 0;
-        timerLabel.setText("0s");
-        timeline.playFromStart();
-    }
+
+
 
     @FXML
     private void handleEndRecording(ActionEvent event) {
