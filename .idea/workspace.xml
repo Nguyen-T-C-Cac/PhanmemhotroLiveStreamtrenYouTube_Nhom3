@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="cc137955-10a5-4b4e-b2b1-fb1afc95bda6" name="Changes" comment="update : Hash password Database">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/applivestream/database/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/applivestream/database/UserRepository.java" afterDir="false" />
+=======
+    <list default="true" id="cc137955-10a5-4b4e-b2b1-fb1afc95bda6" name="Changes" comment="Fix : timeline when click button start record">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/applivestream/views/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/applivestream/views/main.fxml" afterDir="false" />
+>>>>>>> 13b312cbbc2f1860cf8c7b0040bf159f7602a00e
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +32,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -63,6 +75,7 @@
     &quot;JAR Application.AppLiveStream-1.0-SNAPSHOT.jar.executor&quot;: &quot;Run&quot;,
     &quot;Maven.AppLiveStream [clean].executor&quot;: &quot;Run&quot;,
     &quot;Maven.AppLiveStream [package].executor&quot;: &quot;Run&quot;,
+<<<<<<< HEAD
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -71,25 +84,41 @@
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/DELL/SoftWareEnginneringProject/PhanmemhotroLiveStreamtrenYouTube_Nhom3&quot;,
+=======
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;duc__branch&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Desktop/CloneAnToanBM&quot;,
+>>>>>>> 13b312cbbc2f1860cf8c7b0040bf159f7602a00e
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+<<<<<<< HEAD
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.41954023&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+=======
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.41954023&quot;,
+>>>>>>> 13b312cbbc2f1860cf8c7b0040bf159f7602a00e
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+<<<<<<< HEAD
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Java/jdk-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+=======
+>>>>>>> 13b312cbbc2f1860cf8c7b0040bf159f7602a00e
       <option name="MAIN_CLASS_NAME" value="com.example.applivestream.App" />
-      <module name="AppLiveStream" />
+      <module name="PhanmemhotroLiveStreamtrenYouTube_Nhom3" />
       <option name="VM_PARAMETERS" value="--add-opens=java.desktop/java.awt=ALL-UNNAMED" />
       <extension name="coverage">
         <pattern>
@@ -126,16 +155,21 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.UserRepository" />
         <item itemvalue="JAR Application.AppLiveStream-1.0-SNAPSHOT.jar" />
+        <item itemvalue="Application.UserRepository" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+<<<<<<< HEAD
         <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
         <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+=======
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+>>>>>>> 13b312cbbc2f1860cf8c7b0040bf159f7602a00e
       </set>
     </attachedChunks>
   </component>
@@ -150,6 +184,7 @@
       <workItem from="1747477675684" duration="5558000" />
       <workItem from="1747549293227" duration="5150000" />
       <workItem from="1747554848111" duration="207000" />
+<<<<<<< HEAD
       <workItem from="1747867511581" duration="5063000" />
       <workItem from="1747973033613" duration="769000" />
       <workItem from="1747973830173" duration="386000" />
@@ -157,6 +192,26 @@
       <workItem from="1747974272636" duration="11000" />
       <workItem from="1747974320016" duration="4769000" />
       <workItem from="1748064648072" duration="5390000" />
+=======
+      <workItem from="1747892464689" duration="292000" />
+      <workItem from="1747898679445" duration="24000" />
+      <workItem from="1747898708663" duration="1519000" />
+      <workItem from="1747901217153" duration="4000" />
+      <workItem from="1747911027428" duration="169000" />
+      <workItem from="1747927379681" duration="1000" />
+      <workItem from="1747927387804" duration="33000" />
+      <workItem from="1747927432856" duration="1000" />
+      <workItem from="1747931447205" duration="329000" />
+      <workItem from="1747969323696" duration="105000" />
+      <workItem from="1747972511681" duration="8795000" />
+      <workItem from="1747981750925" duration="2028000" />
+      <workItem from="1748015808655" duration="257000" />
+      <workItem from="1748016077135" duration="1058000" />
+      <workItem from="1748017449157" duration="2772000" />
+      <workItem from="1748067144588" duration="1000" />
+      <workItem from="1748067275480" duration="4484000" />
+      <workItem from="1748074330230" duration="141000" />
+>>>>>>> 13b312cbbc2f1860cf8c7b0040bf159f7602a00e
     </task>
     <task id="LOCAL-00001" summary="feat : model user">
       <option name="closed" value="true" />
@@ -214,7 +269,95 @@
       <option name="project" value="LOCAL" />
       <updated>1747551138327</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Commit pull">
+      <option name="closed" value="true" />
+      <created>1747892521457</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747892521457</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add : endLives and save,delete to GUI">
+      <option name="closed" value="true" />
+      <created>1747973320066</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1747973320066</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add : model Video">
+      <option name="closed" value="true" />
+      <created>1747973542344</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1747973542344</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add : database VideoRepository">
+      <option name="closed" value="true" />
+      <created>1747974244541</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1747974244541</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix : End Streaming">
+      <option name="closed" value="true" />
+      <created>1747977165061</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1747977165061</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ADD: Controller button End Stream">
+      <option name="closed" value="true" />
+      <created>1747981410805</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1747981410805</updated>
+    </task>
+    <task id="LOCAL-00014" summary="ADD: new GUI videoStorage">
+      <option name="closed" value="true" />
+      <created>1747981451501</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1747981451501</updated>
+    </task>
+    <task id="LOCAL-00015" summary="ADD: Controller button Save and List Video">
+      <option name="closed" value="true" />
+      <created>1747981457669</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1747981457669</updated>
+    </task>
+    <task id="LOCAL-00016" summary="ADD: bo dem giay">
+      <option name="closed" value="true" />
+      <created>1748016739331</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1748016739331</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Edit : Button EndRecord">
+      <option name="closed" value="true" />
+      <created>1748069670709</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1748069670709</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Fix : timeline when click button start record">
+      <option name="closed" value="true" />
+      <created>1748070737777</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1748070737777</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +381,28 @@
     <MESSAGE value="update : Login - kiểm tra định dạng email,pass,ktr trung" />
     <MESSAGE value="update : Login - Regis Database" />
     <MESSAGE value="update : Hash password Database" />
-    <option name="LAST_COMMIT_MESSAGE" value="update : Hash password Database" />
+    <MESSAGE value="Commit pull" />
+    <MESSAGE value="add : endLives and save,delete to GUI" />
+    <MESSAGE value="add : model Video" />
+    <MESSAGE value="add : database VideoRepository" />
+    <MESSAGE value="fix : End Streaming" />
+    <MESSAGE value="ADD: Controller button End Stream" />
+    <MESSAGE value="ADD: new GUI videoStorage" />
+    <MESSAGE value="ADD: Controller button Save and List Video" />
+    <MESSAGE value="ADD: bo dem giay" />
+    <MESSAGE value="Edit : Button EndRecord" />
+    <MESSAGE value="Fix : timeline when click button start record" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix : timeline when click button start record" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/applivestream/App.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
