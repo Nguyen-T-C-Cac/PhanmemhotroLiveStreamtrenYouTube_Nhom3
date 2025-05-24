@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="cc137955-10a5-4b4e-b2b1-fb1afc95bda6" name="Changes" comment="update : Hash password Database">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/applivestream/database/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/applivestream/database/UserRepository.java" afterDir="false" />
-=======
     <list default="true" id="cc137955-10a5-4b4e-b2b1-fb1afc95bda6" name="Changes" comment="Fix : timeline when click button start record">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/applivestream/views/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/applivestream/views/main.fxml" afterDir="false" />
->>>>>>> 13b312cbbc2f1860cf8c7b0040bf159f7602a00e
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,17 +32,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;chutoanduc2601&quot;
-  }
-}</component>
+        &quot;lastFilter&quot;: {
+        &quot;state&quot;: &quot;OPEN&quot;,
+        &quot;assignee&quot;: &quot;chutoanduc2601&quot;
+        }
+        }</component>
   <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Nguyen-T-C-Cac/PhanmemhotroLiveStreamtrenYouTube_Nhom3.git&quot;,
-    &quot;accountId&quot;: &quot;1a6fd6f7-4fc5-4224-9e3a-dd75464ae686&quot;
-  }
-}</component>
+        &quot;selectedUrlAndAccountId&quot;: {
+        &quot;url&quot;: &quot;https://github.com/Nguyen-T-C-Cac/PhanmemhotroLiveStreamtrenYouTube_Nhom3.git&quot;,
+        &quot;accountId&quot;: &quot;1f24cb8d-341a-41ee-b77a-d0d1f184fe61&quot;
+        }
+        }</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -59,64 +51,41 @@
     </option>
   </component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 4
-}</component>
+        &quot;customColor&quot;: &quot;&quot;,
+        &quot;associatedIndex&quot;: 4
+        }</component>
   <component name="ProjectId" id="2xDfg30Ige2lExY1Y1MbGj5Jelh" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UserRepository.executor&quot;: &quot;Run&quot;,
-    &quot;JAR Application.AppLiveStream-1.0-SNAPSHOT.jar.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AppLiveStream [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AppLiveStream [package].executor&quot;: &quot;Run&quot;,
-<<<<<<< HEAD
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;sang__branch&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/DELL/SoftWareEnginneringProject/PhanmemhotroLiveStreamtrenYouTube_Nhom3&quot;,
-=======
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;duc__branch&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Desktop/CloneAnToanBM&quot;,
->>>>>>> 13b312cbbc2f1860cf8c7b0040bf159f7602a00e
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-<<<<<<< HEAD
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.41954023&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-=======
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.41954023&quot;,
->>>>>>> 13b312cbbc2f1860cf8c7b0040bf159f7602a00e
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+        &quot;keyToString&quot;: {
+        &quot;Application.App.executor&quot;: &quot;Run&quot;,
+        &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+        &quot;Application.UserRepository.executor&quot;: &quot;Run&quot;,
+        &quot;JAR Application.AppLiveStream-1.0-SNAPSHOT.jar.executor&quot;: &quot;Run&quot;,
+        &quot;Maven.AppLiveStream [clean].executor&quot;: &quot;Run&quot;,
+        &quot;Maven.AppLiveStream [package].executor&quot;: &quot;Run&quot;,
+        &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+        &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+        &quot;git-widget-placeholder&quot;: &quot;duc__branch&quot;,
+        &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+        &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Desktop/CloneAnToanBM&quot;,
+        &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+        &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+        &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+        &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+        &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+        &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+        &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+        &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+        &quot;project.structure.side.proportion&quot;: &quot;0.41954023&quot;,
+        &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+        }
+        }</component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-<<<<<<< HEAD
-      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Java/jdk-17" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-=======
->>>>>>> 13b312cbbc2f1860cf8c7b0040bf159f7602a00e
       <option name="MAIN_CLASS_NAME" value="com.example.applivestream.App" />
       <module name="PhanmemhotroLiveStreamtrenYouTube_Nhom3" />
       <option name="VM_PARAMETERS" value="--add-opens=java.desktop/java.awt=ALL-UNNAMED" />
@@ -163,13 +132,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-<<<<<<< HEAD
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
-=======
         <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
         <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
->>>>>>> 13b312cbbc2f1860cf8c7b0040bf159f7602a00e
       </set>
     </attachedChunks>
   </component>
@@ -184,15 +148,6 @@
       <workItem from="1747477675684" duration="5558000" />
       <workItem from="1747549293227" duration="5150000" />
       <workItem from="1747554848111" duration="207000" />
-<<<<<<< HEAD
-      <workItem from="1747867511581" duration="5063000" />
-      <workItem from="1747973033613" duration="769000" />
-      <workItem from="1747973830173" duration="386000" />
-      <workItem from="1747974244445" duration="8000" />
-      <workItem from="1747974272636" duration="11000" />
-      <workItem from="1747974320016" duration="4769000" />
-      <workItem from="1748064648072" duration="5390000" />
-=======
       <workItem from="1747892464689" duration="292000" />
       <workItem from="1747898679445" duration="24000" />
       <workItem from="1747898708663" duration="1519000" />
@@ -211,7 +166,6 @@
       <workItem from="1748067144588" duration="1000" />
       <workItem from="1748067275480" duration="4484000" />
       <workItem from="1748074330230" duration="141000" />
->>>>>>> 13b312cbbc2f1860cf8c7b0040bf159f7602a00e
     </task>
     <task id="LOCAL-00001" summary="feat : model user">
       <option name="closed" value="true" />
@@ -362,17 +316,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat : model user" />
