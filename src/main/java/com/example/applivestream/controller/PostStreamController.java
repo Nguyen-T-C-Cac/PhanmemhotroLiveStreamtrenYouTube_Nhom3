@@ -12,11 +12,16 @@ import java.util.ResourceBundle;
 
 public class PostStreamController implements Initializable {
 
-    @FXML private HBox titleBox;
-    @FXML private TextField titleField;
-    @FXML private ListView<String> videoListView;
+    @FXML
+    private HBox titleBox;
+    @FXML
+    private TextField titleField;
+    @FXML
+    private ListView<String> videoListView;
 
-    @FXML private Label durationLabel;
+    @FXML
+    private Label durationLabel;
+
     public void setDuration(int seconds) {
         durationLabel.setText("Recorded Time: " + seconds + "s");
     }
@@ -24,6 +29,7 @@ public class PostStreamController implements Initializable {
     @FXML
     public void initialize() {
     }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         // Ẩn input và list lúc khởi tạo
@@ -36,20 +42,23 @@ public class PostStreamController implements Initializable {
         videoListView.setCellFactory(lv -> new ListCell<>() {
             private final HBox cellBox = new HBox(10);
             private final Label lbl = new Label();
+            //            7.2.1	User nhấn nút xóa video.
             private final Button delBtn = new Button("Xóa");
+            //            7.3.1	Chọn video cần xem.
             private final Button vieBtn = new Button("Xem");
 
             {
-                // Cho nút Xóa remove chính item này khi click
+//                7.2.2	Poststream.fxml gửi yêu cầu xóa đến PostStreamController
                 delBtn.setOnAction(e -> {
                     String item = getItem();
                     getListView().getItems().remove(item);
                 });
                 // cho label & button phóng to trong HBox
                 HBox.setHgrow(lbl, Priority.ALWAYS);
-                cellBox.getChildren().addAll(lbl, delBtn,vieBtn);
+                cellBox.getChildren().addAll(lbl, delBtn, vieBtn);
             }
 
+            //7.2.6	Poststream trả về listVideo đã xóa đi 1.
             @Override
             protected void updateItem(String item, boolean empty) {
                 super.updateItem(item, empty);
@@ -63,7 +72,6 @@ public class PostStreamController implements Initializable {
         });
     }
 
-    /** Hiện ô nhập tiêu đề khi nhấn Save Video */
     @FXML
     private void onSaveVideoClicked(ActionEvent event) {
         titleBox.setVisible(true);
@@ -71,7 +79,9 @@ public class PostStreamController implements Initializable {
         titleField.requestFocus();
     }
 
-    /** Thêm tiêu đề vào ListView và ẩn ô nhập */
+    /**
+     * Thêm tiêu đề vào ListView và ẩn ô nhập
+     */
     @FXML
     private void onConfirmSaveClicked(ActionEvent event) {
         String title = titleField.getText().trim();
@@ -85,7 +95,9 @@ public class PostStreamController implements Initializable {
         titleBox.setManaged(false);
     }
 
-    /** Toggle show/ẩn danh sách video */
+    //7.1.10	Poststream gửi về listVideo.
+//    7.3.2	Poststream.fxml yêu cầu xử lí đến PoststreamController.
+//    7.3.6	PoststreamController gửi video lên.
     @FXML
     private void onShowListClicked(ActionEvent event) {
         boolean showing = videoListView.isVisible();

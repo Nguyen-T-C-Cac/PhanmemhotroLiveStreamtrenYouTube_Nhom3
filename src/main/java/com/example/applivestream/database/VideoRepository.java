@@ -19,8 +19,8 @@ public class VideoRepository {
             e.printStackTrace();
         }
     }
+//7.1.8	VideoRepository lưu thông tin video xuống Database.
 
-    /** 2.1.0.2 & 2.1.0.3: Lưu thông tin video vào Database */
     public static boolean saveVideo(Video video) {
         String sql = "INSERT INTO videos(id, title, filepath, recorded_at) VALUES(?,?,?,?)";
         try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
@@ -37,14 +37,29 @@ public class VideoRepository {
             return false;
         }
     }
-
-    /** 2.1.1.2 & 2.1.1.3: Xóa video khỏi Database */
+//7.2.3	PostStreamController gửi yêu cầu xóa đến VideoRepository
+//    7.2.4	VideoRepository xóa video ở trong database.
     public static boolean deleteVideo(String videoId) {
         String sql = "DELETE FROM videos WHERE id = ?";
         try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
              PreparedStatement ps = conn.prepareStatement(sql)) {
 
             ps.setString(1, videoId);
+            return ps.executeUpdate() == 1;
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            return false;
+        }
+    }
+//    7.3.3	PoststreamController yêu cầu VideoRepository đưa video trong database lên.
+//    7.3.4	VideoRepository tìm video trong database.
+//    7.3.5	Database trả về video.
+    public static boolean findVideo(String title) {
+        String sql = "SELECT * FROM videos WHERE title = ?";
+        try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+
+            ps.setString(1, title);
             return ps.executeUpdate() == 1;
         } catch (SQLException ex) {
             ex.printStackTrace();

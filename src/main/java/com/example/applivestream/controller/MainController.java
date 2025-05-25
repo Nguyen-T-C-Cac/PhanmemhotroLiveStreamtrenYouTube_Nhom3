@@ -103,7 +103,7 @@ public class MainController implements Initializable {
                 0, bf.getWidth());
         return wr;
     }
-
+//7.1.2 Main.fxml gửi lên mainController qua onEndStreamingClicked()
     @FXML
     private void onEndStreamingClicked(ActionEvent event) {
         timeline.stop();
@@ -111,6 +111,8 @@ public class MainController implements Initializable {
         try {
             // Load fxml của popup
             FXMLLoader loader = new FXMLLoader(
+//                    7.1.3	MainController gửi yêu cầu lên poststream.fxml.
+//                    7.1.4	PostStream trả về GUI.
                     getClass().getResource("/com/example/applivestream/views/poststream.fxml")
             );
             Parent root = loader.load();
@@ -136,7 +138,7 @@ public class MainController implements Initializable {
         if (timeline != null) timeline.stop();
 
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/applivestream/poststream.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/applivestream/views/poststream.fxml"));
             Parent root = loader.load();
 
             PostStreamController controller = loader.getController();

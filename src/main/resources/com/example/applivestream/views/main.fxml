@@ -61,7 +61,7 @@
             <!-- CONTROLS -->
             <VBox spacing="10">
                 <Label text="Controls" style="-fx-text-fill: white;" />
-                <Button text="Start Streaming" onAction="#handleStartRecording" />
+                <Button fx:id="startRecordButton" text="Start Streaming" onAction="#handleStartRecording" />
                 <Button text="Start Recording" onAction="#handleStartRecording" />
                 <Button text="Start Virtual Camera" />
                 <Button text="Studio Mode" />
@@ -72,9 +72,11 @@
                   spacing="10"
                   AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20">
                 <Label text="Video Storage" style="-fx-text-fill: white;" />
-<!--                2.1.0.0	User nhấn nút “Kết thúc phiên live”.-->
+
+<!--                7.1.1	User nhấn nút “Stop Streaming.-->
                 <Button text="Stop Streaming"
                         onAction="#onEndStreamingClicked"/>
+<!--                7.1.2 Main.fxml gửi lên mainController qua onEndStreamingClicked().-->
                 <Button fx:id="endRecordButton" text="Stop Record" onAction="#onEndStreamingClicked" />
                 <Label fx:id="timerLabel"
                        text="0s"

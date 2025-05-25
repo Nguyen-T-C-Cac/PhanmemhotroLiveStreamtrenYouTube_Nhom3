@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc137955-10a5-4b4e-b2b1-fb1afc95bda6" name="Changes" comment="Fix : timeline when click button start record">
+    <list default="true" id="cc137955-10a5-4b4e-b2b1-fb1afc95bda6" name="Changes" comment="commit merge">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/applivestream/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/applivestream/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/applivestream/controller/PostStreamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/applivestream/controller/PostStreamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/applivestream/database/VideoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/applivestream/database/VideoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/applivestream/views/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/applivestream/views/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/applivestream/views/poststream.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/applivestream/views/poststream.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +25,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="duc_branch" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -59,31 +65,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UserRepository.executor&quot;: &quot;Run&quot;,
-    &quot;JAR Application.AppLiveStream-1.0-SNAPSHOT.jar.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AppLiveStream [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AppLiveStream [package].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;duc__branch&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Desktop/CloneAnToanBM&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.41954023&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "Application.HelloApplication.executor": "Run",
+    "Application.UserRepository.executor": "Run",
+    "JAR Application.AppLiveStream-1.0-SNAPSHOT.jar.executor": "Run",
+    "Maven.AppLiveStream [clean].executor": "Run",
+    "Maven.AppLiveStream [package].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "duc__branch",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Administrator/Desktop/CloneAnToanBM",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.41954023",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.applivestream.App" />
@@ -126,6 +132,8 @@
         <item itemvalue="Application.App" />
         <item itemvalue="JAR Application.AppLiveStream-1.0-SNAPSHOT.jar" />
         <item itemvalue="Application.UserRepository" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="JAR Application.AppLiveStream-1.0-SNAPSHOT.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -166,6 +174,9 @@
       <workItem from="1748067144588" duration="1000" />
       <workItem from="1748067275480" duration="4484000" />
       <workItem from="1748074330230" duration="141000" />
+      <workItem from="1748086893499" duration="3330000" />
+      <workItem from="1748138051560" duration="3073000" />
+      <workItem from="1748159463913" duration="2016000" />
     </task>
     <task id="LOCAL-00001" summary="feat : model user">
       <option name="closed" value="true" />
@@ -311,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748070737777</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="commit merge">
+      <option name="closed" value="true" />
+      <created>1748075635456</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1748075635456</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +354,8 @@
     <MESSAGE value="ADD: bo dem giay" />
     <MESSAGE value="Edit : Button EndRecord" />
     <MESSAGE value="Fix : timeline when click button start record" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix : timeline when click button start record" />
+    <MESSAGE value="commit merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit merge" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

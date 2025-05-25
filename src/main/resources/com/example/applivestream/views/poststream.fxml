@@ -17,9 +17,11 @@
           AnchorPane.rightAnchor="20">
 
         <HBox spacing="10">
+<!--            7.1.5	User nhập tiêu đề, ấn SaveVideo-->
             <Button text="Save Video"
                     onAction="#onSaveVideoClicked"
                     prefWidth="150"/>
+<!--            7.3.1	Chọn video cần xem.-->
             <Button text="Danh sách Video"
                     onAction="#onShowListClicked"
                     prefWidth="150"/>
@@ -30,14 +32,17 @@
               spacing="5"
               visible="false" managed="false">
             <Label text="Tiêu đề:"/>
+            <!--            7.1.5	User nhập tiêu đề, ấn SaveVideo-->
             <TextField fx:id="titleField"
                        promptText="Nhập tiêu đề..."
                        prefWidth="200"/>
+            <!--            7.1.6	Poststream.fxml gửi yêu cầu đến poststreamController-->
             <Button text="OK"
                     onAction="#onConfirmSaveClicked"/>
         </HBox>
-
-        <!-- Không đổi: ListView hiển thị list, sẽ được custom cell factory -->
+<!--        7.1.11	Poststream.fxml hiển thị listVideo.-->
+<!--        7.2.7	Hiển thị đã xóa ( video biến mất ).-->
+<!--        7.3.7	Hiển thị video.-->
         <ListView fx:id="videoListView"
                   prefHeight="150"
                   visible="false" managed="false"/>
